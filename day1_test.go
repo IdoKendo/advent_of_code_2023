@@ -2,8 +2,6 @@ package main
 
 import (
 	"testing"
-
-	"github.com/stretchr/testify/assert"
 )
 
 func TestPart1(t *testing.T) {
@@ -13,9 +11,9 @@ a1b2c3d4e5f
 treb7uchet`
 	output := solution(input, 1)
 	expected := 142
-
-	assert.Equal(t, output, expected, "The two words should be the same.")
-
+	if output != expected {
+		t.Errorf("[%s] got %d; want %d", t.Name(), output, expected)
+	}
 }
 
 func TestPart2(t *testing.T) {
@@ -28,6 +26,7 @@ zoneight234
 7pqrstsixteen`
 	output := solution(input, 2)
 	expected := 281
-
-	assert.Equal(t, output, expected, "The two words should be the same.")
+	if output != expected {
+		t.Errorf("[%s] got %d; want %d", t.Name(), output, expected)
+	}
 }
