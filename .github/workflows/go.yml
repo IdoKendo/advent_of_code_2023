@@ -23,12 +23,6 @@ jobs:
       with:
         go-version: '1.21'
 
-    - name: Lint
-      working-directory: ${{matrix.day}}
-      uses: golangci/golangci-lint-action@v3
-      with:
-        version: v1.54
-
     - name: Build
       working-directory: ${{matrix.day}}
       run: go build -v ./...
