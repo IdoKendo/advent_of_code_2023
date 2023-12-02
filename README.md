@@ -41,5 +41,5 @@ The times are time since the puzzle was posted, not since I started solving.
 | 5   |             |             |             |             |
 | 4   |             |             |             |             |
 | 3   |             |             |             |             |
-| 2   |             |             |             |             |
+| 2   | 02:53:56    | 20685       | 03:04:18    | 19755       |
 | 1   | 05:03:44    | 43781       | 05:18:48    | 26431       |

@@ -46,7 +46,6 @@ func main() {
 		fmt.Print(err)
 	}
 	input := string(b)
-	fmt.Println(input)
 	fmt.Println(solution(input, 1))
 	fmt.Println(solution(input, 2))
 }

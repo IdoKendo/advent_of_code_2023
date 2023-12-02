@@ -27,8 +27,7 @@ jobs:
         version: v1.54
 
     - name: Build
-      run: go build -v ./...
+      run: go list -f '{{.Dir}}/...' -m | xargs go build -v
 
     - name: Test
-      run: go test -v ./...
-
+      run: go list -f '{{.Dir}}/...' -m | xargs go test -v
